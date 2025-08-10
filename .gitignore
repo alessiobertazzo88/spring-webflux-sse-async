@@ -1,16 +1,20 @@
-# Compiled class file
-*.class
+# Build Maven
+target/
 
-# Log file
+# MacOS
+.DS_Store
+
+# File compilati e di log
+*.class
 *.log
 
-# BlueJ files
+# File BlueJ
 *.ctxt
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# Package Files
 *.jar
 *.war
 *.nar
@@ -19,6 +23,6 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Crash JVM
 hs_err_pid*
 replay_pid*

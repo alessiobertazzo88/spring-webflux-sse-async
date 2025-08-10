@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="spring-webflux-sse-async [run]" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="services.abtech.asyncfluxsse.AsyncFluxSseApplication" />
+    <module name="spring-webflux-sse-async" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
