@@ -31,6 +31,13 @@ public class MessageController {
         this.sinks = sinks;
     }
 
+    @PostMapping("/start-stream")
+    public Mono<Map<String, UUID>> startStream() {
+        UUID uuid = UUID.randomUUID();
+        sinks.put(uuid, Sinks.many().multicast().onBackpressureBuffer());
+        return Mono.just(Map.of("uuid", uuid));
+    }
+
     @PostMapping("/enqueue")
     public Mono<Void> enqueue(@RequestBody Message message) {
         return Mono.fromRunnable(() -> {
